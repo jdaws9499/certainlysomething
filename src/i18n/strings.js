@@ -339,7 +339,7 @@ export const strings = {
         long: 'Extended Key Usages',
       }
     },
-    '1.2.3.4': {
+    '1.3.6.1.4.1.60933.1': {
       name: {
         short: 'Kids Rating',
         long: 'Kids Assessed Rating'
@@ -419,7 +419,7 @@ export const strings = {
   },
 
   kidsRating: {
-    '1.2.3.4': {
+    '1.3.6.1.4.1.60933.1': {
       name: 'E',
       value: 'Early'
     }
@@ -430,7 +430,7 @@ export const strings = {
     'E': 'Elementary (6-9, core primary school years)',
     'T': 'Transition (10-12)',
     'ET':'Early Teen (13-15)',
-    'LT': 'Late Teen (17-17, approaching adulthood)',
+    'LT': 'Late Teen (16-17, approaching adulthood)',
   },
   // this includes qualifiers as well
   cps: {

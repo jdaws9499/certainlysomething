@@ -75,7 +75,7 @@ export const parse = async (certificate) => {
     '2.5.29.32',                // certificate policies
     '2.5.29.35',                // authority key identifier
     '2.5.29.37',                // extended key usage
-    '1.2.3.4', //Added kidsPro Rating
+    '1.3.6.1.4.1.60933.1', //Added kidsPro Rating  change
   ];
 
   // get the current time zone - note that there are some time zones that this doesn't easily
@@ -263,12 +263,12 @@ export const parse = async (certificate) => {
   }
 
   // get KidsPro assigned rating
-  let kpr = getX509Ext(x509.extensions,'1.2.3.4').extnID;
+  let kpr = getX509Ext(x509.extensions,'1.3.6.1.4.1.60933.1').extnID;
   if (kpr) {
     console.log('found kpr');
-    let pValue = getX509Ext(x509.extensions,'1.2.3.4').extnValue.valueBlock.value[0].valueBlock.value
+    let pValue = getX509Ext(x509.extensions,'1.3.6.1.4.1.60933.1').extnValue.valueBlock.value[0].valueBlock.value
     kpr = {
-      critical: criticalExtensions.includes('1.2.3.4'),
+      critical: criticalExtensions.includes('1.3.6.1.4.1.60933.1'),
       requred: false,
       value: pValue,
       rating: strings.kidsRatings[pValue]
