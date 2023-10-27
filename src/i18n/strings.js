@@ -430,7 +430,7 @@ export const strings = {
     'E': 'Elementary (6-9, core primary school years)',
     'T': 'Transition (10-12)',
     'ET':'Early Teen (13-15)',
-    'LT': 'Late Teen (16-17, approaching adulthood)',
+    'MT': 'Mid Teen (16-17, approaching adulthood)',
   },
   // this includes qualifiers as well
   cps: {
