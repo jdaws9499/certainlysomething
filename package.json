@@ -7,7 +7,7 @@
     "compile": "webpack --config=config/webpack.config.js",
     "package": "web-ext build -s build -a dist --overwrite-dest",
     "build": "npm run compile && npm run package",
-    "watch": "NODE_ENV=development webpack --config=config/webpack.config.js --watch"
+    "watch": "webpack --mode=development --watch --config config/webpack.config.js"
   },
   "repository": {
     "type": "git",
