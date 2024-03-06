@@ -38,26 +38,4 @@ Navigate to `build/manifest.json` and it should start running immediately.
 
 ## Supported Functionality
 
-* Handshake information (TLS version, cipher suite, signature scheme)
-* Subject and issuer information (common name, organization, etc.)
-* Validity date ranges
-* Subject alternative names
-* Subject public key information (SPKI)
-* Certificate downloading
-* Key usage
-* Serial numbers
-* Fingerprints
-* Extensions, including
-  * Basic constraints
-  * Extended key usage
-  * Certificate revocation list (CRL) endpoints
-  * Authority information access (AIA)
-  * Certificate policies (most common policies)
-  * Subject key identifiers
-  * Authority key identifiers
-  * OCSP stapling
-  * [Embedded SCTs](https://www.certificate-transparency.org/), including CT log names  
-
-## Kudos
-
-Thanks so much to Ryan Hurst and Yury Strozhevsky for doing the painful work in [PKI.js](https://pkijs.org/) and [ASN1.js](https://asn1js.org/), without which this project could not have been accomplished.
+This plugin extended Certainly Something plugin to read custom extension field.
